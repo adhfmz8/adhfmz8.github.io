@@ -16,38 +16,30 @@ body {
     background-color: var(--background-color);
 }
 
-p {
-    display: block;
+p, .funnel-display-title, .skills-title {
     text-align: center;
+}
+
+.funnel-display-title, .home-title, .project-title {
+    font-family: "Funnel Display", sans-serif;
 }
 
 .funnel-display-title {
-    text-align: center;
-     font-family: "Funnel Display", sans-serif;
-     font-optical-sizing: auto;
-     font-style: normal;
+    font-optical-sizing: auto;
+    font-style: normal;
     color: var(--text-color);
 }
-.home-title {
-    font-family: "Funnel Display", sans-serif;
+
+.home-title, .project-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-    color: var(--text-color);
-
 }
 
 .project-title {
-    font-family: "Funnel Display", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
     color: var(--secondary-color);
 }
 
@@ -78,13 +70,11 @@ a {
     color: var(--text-color);
     font-size: 2rem;
     margin-bottom: 2rem;
-    text-align: center;
 }
 
 .skills-grid {
     display: flex;
     flex-direction: row;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem;
     padding: 1rem;
 }
@@ -109,16 +99,10 @@ a {
 .skill-name {
     color: var(--text-color);
     font-size: 1.1rem;
-    text-align: center;
     margin: 0;
 }
 
 @media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 1rem;
-    }
-
     .skill-card {
         padding: 1rem;
     }
