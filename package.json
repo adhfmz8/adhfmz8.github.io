@@ -1,5 +1,16 @@
 {
   "devDependencies": {
-    "prettier": "^3.4.2"
+    "htmlhint": "^1.1.4",
+    "prettier": "^3.4.2",
+    "stylelint": "^16.12.0",
+    "stylelint-config-standard": "^36.0.1"
+  },
+  "scripts": {
+    "lint:css": "stylelint './css/*.css'",
+    "format:css": "prettier --write './css/*.css'",
+    "lint:html": "htmlhint '*.html' 'pages/**/*.html'",
+    "format:html": "prettier --write '*.html' 'pages/**/*.html'",
+    "lint": "npm run lint:css && npm run lint:html",
+    "format": "npm run format:css && npm run format:html"
   }
 }
